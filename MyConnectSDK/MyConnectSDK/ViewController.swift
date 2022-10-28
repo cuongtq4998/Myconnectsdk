@@ -60,13 +60,6 @@ extension ViewController {
     func cancelObserve(){
         wkWebView.configuration.userContentController.removeScriptMessageHandler(forName: "gatewaySdk")
     }
-    
-    private func showUser(data: String) {
-        let userDescription = "\(data)"
-        let alertController = UIAlertController(title: "MiniApp", message: userDescription, preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .default))
-        present(alertController, animated: true)
-    }
 }
 
 extension ViewController: WKNavigationDelegate, UIWebViewDelegate, WKScriptMessageHandler, WKUIDelegate {
@@ -79,7 +72,13 @@ extension ViewController: WKNavigationDelegate, UIWebViewDelegate, WKScriptMessa
 
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         if let data = message.body as? String {
-            showUser(data: data)
+
+        }
+        
+        let date = Date().description
+        let jsSource = "showDate('\(date)')"
+        wkWebView.evaluateJavaScript(jsSource) { (result, error) in
+            print(result, error)
         }
     }
 }
