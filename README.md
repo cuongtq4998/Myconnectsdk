@@ -19,6 +19,8 @@ To be connected and to interact with SDK mini app , Client should be defined met
 ### How to Test the Sample SDK
 ### How to test
 1.Run IOS Applications
+```
+```
 2.WKWebView load resources of MiniApp
 ```
     if let url = Bundle.main.url(forResource: "index", withExtension: "html") {
@@ -35,6 +37,8 @@ To be connected and to interact with SDK mini app , Client should be defined met
     }
 ```
 5.Then application is running and connected to Mini App SDK , data will be passed in javascript file [IOS_bridge.js](https://github.com/cuongtq4998/Myconnectsdk/blob/develop/inject_jsfile/MyConnectSDK/MyConnectSDK/js/IOS_bridge.js)
+```
+```
 6.You can debug webView , see the [Guides](https://blog.vuplex.com/debugging-webviews)
 
 ### 2.Management App
