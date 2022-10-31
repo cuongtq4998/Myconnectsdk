@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		523FD4FD290AE40C0078C187 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 523FD4FC290AE40C0078C187 /* index.html */; };
-		523FD4FF290AE4150078C187 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 523FD4FE290AE4150078C187 /* js */; };
+		25A762F5290FB6EF00B959D8 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 25A762F3290FB6EF00B959D8 /* js */; };
+		25A762F6290FB6EF00B959D8 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 25A762F4290FB6EF00B959D8 /* index.html */; };
 		52F93F4A290AD17800BBAA3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F93F49290AD17800BBAA3F /* AppDelegate.swift */; };
 		52F93F4C290AD17800BBAA3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F93F4B290AD17800BBAA3F /* SceneDelegate.swift */; };
 		52F93F4E290AD17800BBAA3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F93F4D290AD17800BBAA3F /* ViewController.swift */; };
@@ -38,8 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		523FD4FC290AE40C0078C187 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		523FD4FE290AE4150078C187 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = js; sourceTree = "<group>"; };
+		25A762F3290FB6EF00B959D8 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = js; sourceTree = "<group>"; };
+		25A762F4290FB6EF00B959D8 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		52F93F46290AD17800BBAA3F /* MyConnectSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyConnectSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F93F49290AD17800BBAA3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52F93F4B290AD17800BBAA3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 		52F93F48290AD17800BBAA3F /* MyConnectSDK */ = {
 			isa = PBXGroup;
 			children = (
-				523FD4FC290AE40C0078C187 /* index.html */,
-				523FD4FE290AE4150078C187 /* js */,
+				25A762F4290FB6EF00B959D8 /* index.html */,
+				25A762F3290FB6EF00B959D8 /* js */,
 				52F93F49290AD17800BBAA3F /* AppDelegate.swift */,
 				52F93F4B290AD17800BBAA3F /* SceneDelegate.swift */,
 				52F93F4D290AD17800BBAA3F /* ViewController.swift */,
@@ -237,11 +237,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				523FD4FF290AE4150078C187 /* js in Resources */,
+				25A762F6290FB6EF00B959D8 /* index.html in Resources */,
 				52F93F56290AD17A00BBAA3F /* LaunchScreen.storyboard in Resources */,
-				523FD4FD290AE40C0078C187 /* index.html in Resources */,
 				52F93F53290AD17A00BBAA3F /* Assets.xcassets in Resources */,
 				52F93F51290AD17800BBAA3F /* Main.storyboard in Resources */,
+				25A762F5290FB6EF00B959D8 /* js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

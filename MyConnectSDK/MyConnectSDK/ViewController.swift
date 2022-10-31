@@ -64,21 +64,16 @@ extension ViewController {
 
 extension ViewController: WKNavigationDelegate, UIWebViewDelegate, WKScriptMessageHandler, WKUIDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        let jsSource = "getMethods()"
-        webView.evaluateJavaScript(jsSource) { (result, error) in
-            print(result, error)
-        }
+        
     }
 
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        if let data = message.body as? String {
-
-        }
-        
-        let date = Date().description
-        let jsSource = "showDate('\(date)')"
-        wkWebView.evaluateJavaScript(jsSource) { (result, error) in
-            print(result, error)
+        if let data = message.body as? String, data == "iosUserHandler" {
+            let date = Date().description
+            let jsSource = "userNameResponse('🫴 USER NAME DATE!!!!! __\(date)__ ')"
+            wkWebView.evaluateJavaScript(jsSource) { (result, error) in
+                print(result, error)
+            }
         }
     }
 }

@@ -1,13 +1,30 @@
-console.log('Test Log');
 
-webkit.messageHandlers.gatewaySdk.postMessage({ someProp: "some value" })
 
-function getMethods() {
-    console.log('getMethods()_______');
-    return "Test function"
+// Miniapp to SDK == interface comunication SDK vs Miniapp
+var globalCallBack;
+function requestUserHostApp(callback){
+    globalCallBack = callback
+    getUserName()
 }
 
-function showDate(date) {
-    console.log('showDate()_______', date);
-    return "showDate() function"
+// SDK to Native
+// 'gatewaySdk': key cho IOS native liten
+// 'iosUserHandler': meta data(input)
+function getUserName() {
+    webkit.messageHandlers.gatewaySdk.postMessage('iosUserHandler')
+}
+
+// Native to SDK
+// 'userName': input native truyền vào
+function userNameResponse(userName){
+    globalCallBack(userName)
+}
+
+//  UI Miniapp to SDK
+function displayUsername() {
+    console.log('vào 1');
+    requestUserHostApp( function(name){
+        console.log('vào 2', name);
+        document.getElementById('lbltipAddedComment').innerHTML = name ;
+    })
 }
